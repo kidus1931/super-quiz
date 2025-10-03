@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body{
+    background-image:url("bg1.jpg");background-size:cover;height:100vh;display:flex;align-items: center;justify-content: center;font-family:Poppins,sans-serif;
+}
+#div1{
+    display: flex;flex-direction:column;justify-content: center;align-items: center;gap:30px;
+}
+#div1 div{
+    width:270px;height:50px;border-radius:5px;background-color: rgba(0, 0, 0, 0.692);font-size:30px;
+    display: flex;align-items: center;justify-content: center;opacity:0;
+    transform:translate(-180px, 0px);cursor:pointer;color:white;
+}
+#div1 :nth-child(1){
+    animation-name: appear;animation-duration:1s;animation-delay:400ms;animation-fill-mode: forwards;
+}
+#div1 :nth-child(2){
+    animation-name: appear;animation-duration:1s;animation-delay:600ms;animation-fill-mode: forwards;
+}
+
+#div1 :nth-child(3){
+    animation-name: appear;animation-duration:1s;animation-delay:800ms;animation-fill-mode: forwards;
+}
+
+#div1 :nth-child(4){
+    animation-name: appear;animation-duration:1s;animation-delay:1000ms;animation-fill-mode: forwards;
+}
+
+
+@keyframes appear{
+    from{transform:translate(-180px, 0px);opacity:0;}
+    to{transform:translate(0px, 0px);opacity:1;}
+}
+#div1 div:hover{
+box-shadow: 0 4px 15px rgba(245, 1, 192, 0.897);
+}
+#div1 div:active{
+box-shadow: 0 4px 15px rgba(129, 128, 129, 0.897);transform:scale(0.5)
+}

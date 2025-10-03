@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th</title>
+    <link rel="stylesheet" href="9th.css">
+</head>
+<body>
+    <div id="div1">
+        <div id="i1">Biology</div>
+        <div id="i2">chemistry</div>
+        <div id="i3">physics</div>
+    </div>
+    <script>
+        document.getElementById("i1").addEventListener("click", function nature(){
+            window.location.href = "Biology.html";
+        })
+         document.getElementById("i3").addEventListener("click", function laws(){
+            window.location.href = "Physics.html";
+        })
+        document.getElementById("i2").addEventListener("click", function explosives(){
+            window.location.href = "Chemistry.html";
+        })
+    </script>
+</body>
+</html>
